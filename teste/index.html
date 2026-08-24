@@ -97,23 +97,23 @@
 
   /* ── DTC INTEGRATED STYLES ── */
   :root {
-    --cream: #FDF5E3;
-    --cream-2: #F2EDE3;
+    --cream: #ffffff;
+    --cream-2: #f8f9fa;
     --teal: #2E7D5B;
     --teal-dark: #184A16;
     --teal-soft: #E8F5E9;
     --coral: #3A9B6E;
     --coral-dark: #2E7D5B;
     --gold: #F0A500;
-    --ink: #2C1A10;
-    --muted: #7A6050;
-    --line: #EDE0C8;
-    --shadow-sm: 0 1px 2px rgba(24,74,22,.06), 0 2px 6px rgba(24,74,22,.04);
-    --shadow: 0 8px 24px rgba(24,74,22,.08), 0 2px 6px rgba(24,74,22,.04);
-    --shadow-lg: 0 20px 50px rgba(24,74,22,.12), 0 6px 16px rgba(24,74,22,.05);
+    --ink: #1a1a1a;
+    --muted: #666666;
+    --line: #e8e8e8;
+    --shadow-sm: 0 1px 3px rgba(0,0,0,.06), 0 2px 6px rgba(0,0,0,.04);
+    --shadow: 0 8px 24px rgba(0,0,0,.08), 0 2px 6px rgba(0,0,0,.04);
+    --shadow-lg: 0 20px 50px rgba(0,0,0,.12), 0 6px 16px rgba(0,0,0,.05);
   }
 
-  .dtc-wrapper { width: 100%; background: var(--cream); color: #1A2922; margin-top: 20px; }
+  .dtc-wrapper { width: 100%; background: #ffffff; color: #1a1a1a; margin-top: 10px; }
   .dtc-wrapper h1, .dtc-wrapper h2, .dtc-wrapper h3, .dtc-wrapper .display { font-family: 'Plus Jakarta Sans', system-ui, sans-serif; letter-spacing: -0.02em; }
 
   /* Sticky CTA */
@@ -135,7 +135,7 @@
   .nav-title span { color: #2E7D5B; }
 
   /* Pricing */
-  .section-main { background: var(--cream); padding: 44px 16px 48px; }
+  .section-main { background: #ffffff; padding: 40px 16px 48px; }
   .potes-holder-grid { display: grid; grid-template-columns: repeat(3,1fr); gap: 18px; max-width: 1080px; margin: 0 auto 36px; align-items: stretch; }
   .pote-card { background: #fff; border: 1.5px solid #ccc; border-radius: 20px; overflow: hidden; display: flex; flex-direction: column; transition: transform .25s ease, box-shadow .25s ease; box-shadow: var(--shadow-sm); }
   .pote-card:hover { transform: translateY(-4px); box-shadow: var(--shadow); }
@@ -161,7 +161,7 @@
   .daily-price .chk-square { width: 22px; height: 22px; min-width: 22px; border-radius: 5px; background: #2E7D5B; display: inline-flex; align-items: center; justify-content: center; }
   .daily-price .chk-square svg { width: 14px; height: 14px; }
   .daily-price .popular-txt { font-size: 16px; font-weight: 800; }
-  .pote-bonuses { margin-bottom: 16px; text-align: left; padding: 14px 14px; background: #FFF8EE; border-radius: 12px; border: 1px solid var(--line); }
+  .pote-bonuses { margin-bottom: 16px; text-align: left; padding: 14px 14px; background: #f9fbf9; border-radius: 12px; border: 1px solid #e2ece5; }
   .pote-bonus-row, .savings-row { display: flex; align-items: center; gap: 10px; font-size: 13px; font-weight: 600; color: var(--ink); margin-bottom: 8px; }
   .pote-bonus-row:last-child, .savings-row:last-child { margin-bottom: 0; }
   .chk-icon { width: 18px; height: 18px; min-width: 18px; display: flex; align-items: center; justify-content: center; flex-shrink: 0; }
@@ -198,11 +198,11 @@
   .ship-banner .sub-txt span { color: #FFD782; font-weight: 700; }
 
   /* SlimJara Story */
-  .leanzene-section { background: #FDF5E3; padding: 64px 24px; position: relative; overflow: hidden; }
+  .leanzene-section { background: #fafafa; padding: 64px 24px; position: relative; overflow: hidden; border-top: 1px solid #eeeeee; border-bottom: 1px solid #eeeeee; }
   .leanzene-inner { position: relative; max-width: 980px; margin: 0 auto; background: #fff; border-radius: 28px; padding: 44px; box-shadow: var(--shadow); border: 1px solid var(--line); display: flex; flex-direction: column; gap: 36px; }
   .lean-top { display: flex; align-items: center; gap: 48px; }
   .lean-img-col { flex: 0 0 320px; display: flex; justify-content: center; }
-  .lean-img { width: 100%; aspect-ratio: 1/1; border-radius: 20px; background: #FFF3D0; display: flex; align-items: center; justify-content: center; padding: 24px; }
+  .lean-img { width: 100%; aspect-ratio: 1/1; border-radius: 20px; background: #f0f5f2; display: flex; align-items: center; justify-content: center; padding: 24px; }
   .lean-img img { width: 100%; height: 100%; object-fit: contain; filter: drop-shadow(0 12px 24px rgba(14,92,78,.18)); }
   .lean-text-col { flex: 1; }
   .lean-pre { display: inline-block; color: var(--teal); font-size: 12px; font-weight: 700; margin-bottom: 10px; letter-spacing: 1.2px; text-transform: uppercase; padding: 4px 12px; background: var(--teal-soft); border-radius: 999px; }
@@ -221,7 +221,7 @@
   .badge-label { font-size: 13px; font-weight: 700; color: var(--ink); line-height: 1.25; }
 
   /* DTC Reviews */
-  .dtc-reviews-section { background: #FDF5E3; padding: 64px 24px; border-top: 1px solid var(--line); border-bottom: 1px solid var(--line); }
+  .dtc-reviews-section { background: #ffffff; padding: 64px 24px; border-top: 1px solid var(--line); border-bottom: 1px solid var(--line); }
   .reviews-inner { max-width: 820px; margin: 0 auto; }
   .reviews-title { text-align: center; font-size: 32px; font-weight: 800; color: var(--ink); line-height: 1.2; margin-bottom: 10px; letter-spacing: -.02em; }
   .reviews-count { text-align: center; font-size: 14px; color: var(--muted); font-weight: 600; margin-bottom: 40px; }
@@ -245,7 +245,7 @@
   .review-meta .purchase { font-weight: 600; color: var(--teal); font-size: 11px; }
 
   /* FAQ */
-  .faq-section { background: #FDF5E3; padding: 64px 24px; }
+  .faq-section { background: #fafafa; padding: 64px 24px; border-top: 1px solid #eeeeee; border-bottom: 1px solid #eeeeee; }
   .faq-inner { max-width: 820px; margin: 0 auto; }
   .faq-eyebrow { text-align: center; color: var(--teal); font-weight: 700; font-size: 12px; text-transform: uppercase; letter-spacing: 1.5px; margin-bottom: 10px; }
   .faq-title { text-align: center; font-size: 32px; font-weight: 800; color: var(--ink); margin-bottom: 36px; letter-spacing: -.02em; }
@@ -263,12 +263,12 @@
   .faq-body strong { color: var(--ink); }
 
   /* Final CTA */
-  .cta-section { background: var(--cream); }
+  .cta-section { background: #ffffff; }
   .cta-banner-wrap { background: linear-gradient(135deg,var(--teal) 0%,var(--teal-dark) 100%); padding: 56px 24px 80px; text-align: center; position: relative; overflow: hidden; }
   .cta-banner-wrap::before { content: ""; position: absolute; inset: 0; background: radial-gradient(circle at 20% 30%,rgba(232,176,74,.15),transparent 50%), radial-gradient(circle at 80% 70%,rgba(46,125,91,.12),transparent 50%); pointer-events: none; }
   .cta-banner h2 { color: #fff; font-size: 34px; font-weight: 800; line-height: 1.2; letter-spacing: -.02em; position: relative; }
   .cta-banner h2 span { color: var(--gold); }
-  .cta-cards-wrap { padding: 24px 16px 56px; background: var(--cream); position: relative; }
+  .cta-cards-wrap { padding: 24px 16px 56px; background: #ffffff; position: relative; }
   .final-cta-grid { margin-top: 18px; }
 
   /* ── Responsive Rules ── */
