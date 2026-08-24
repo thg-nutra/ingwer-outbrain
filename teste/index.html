@@ -930,28 +930,6 @@
       el.textContent = d.getDate() + '. ' + m[d.getMonth()] + ' ' + d.getFullYear();
     }
   })();
-
-  /* ── STICKY CTA SCROLL LOGIC ── */
-  (function(){
-    var cta = document.getElementById('stickyCta');
-    var ref = document.getElementById('first-pricing-grid');
-    var container = document.getElementById('dtc-delay-container');
-    if(!cta || !ref) return;
-
-    function onScroll(){
-      if(container && container.classList.contains('esconder')) {
-        cta.classList.remove('visible');
-        return;
-      }
-      var rect = ref.getBoundingClientRect();
-      if(rect.bottom < 0){
-        cta.classList.add('visible');
-      } else {
-        cta.classList.remove('visible');
-      }
-    }
-    window.addEventListener('scroll', onScroll, { passive: true });
-  })();
 </script>
 
 </body>
