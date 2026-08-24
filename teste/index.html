@@ -409,7 +409,7 @@
 <!-- ═══════════════════════════════════════════════════════════════ -->
 <!-- DTC DELAY CONTAINER — Encapsulated for VTurb pitch delay code  -->
 <!-- ═══════════════════════════════════════════════════════════════ -->
-<div class="esconder dtc-wrapper" id="dtc-delay-container">
+<div class="dtc-wrapper" id="dtc-delay-container">
 
   <!-- STICKY CTA -->
   <div class="sticky-cta" id="stickyCta">
@@ -929,6 +929,24 @@
       var m = ['JAN','FEB','MÄR','APR','MAI','JUN','JUL','AUG','SEP','OKT','NOV','DEZ'];
       el.textContent = d.getDate() + '. ' + m[d.getMonth()] + ' ' + d.getFullYear();
     }
+  })();
+
+  /* ── STICKY CTA SCROLL LOGIC ── */
+  (function(){
+    var cta = document.getElementById('stickyCta');
+    var ref = document.getElementById('first-pricing-grid');
+    if(!cta || !ref) return;
+
+    function onScroll(){
+      var rect = ref.getBoundingClientRect();
+      if(rect.bottom < 0){
+        cta.classList.add('visible');
+      } else {
+        cta.classList.remove('visible');
+      }
+    }
+    window.addEventListener('scroll', onScroll, { passive: true });
+    onScroll();
   })();
 </script>
 
