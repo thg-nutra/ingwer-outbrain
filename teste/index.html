@@ -140,6 +140,7 @@
   .pote-card { background: #fff; border: 1.5px solid #ccc; border-radius: 20px; overflow: hidden; display: flex; flex-direction: column; transition: transform .25s ease, box-shadow .25s ease; box-shadow: var(--shadow-sm); }
   .pote-card:hover { transform: translateY(-4px); box-shadow: var(--shadow); }
   .pote-card.popular { border: 2px solid var(--teal); box-shadow: var(--shadow-lg); transform: translateY(-8px); position: relative; background: #fff; }
+  .smartplayer-scroll-event { scroll-margin-top: 18px; }
   .pote-header { background: #f0f0f0; color: var(--muted); text-align: center; padding: 10px 12px; font-size: 13px; font-weight: 800; letter-spacing: 1.5px; text-transform: uppercase; }
   .pote-header.popular { background: linear-gradient(135deg,var(--teal),var(--teal-dark)); color: #fff; font-size: 14px; letter-spacing: 1.2px; }
   .pote-body { padding: 22px 18px 20px; display: flex; flex-direction: column; flex: 1; text-align: center; }
@@ -436,7 +437,7 @@
     <div class="potes-holder-grid" id="first-pricing-grid">
 
       <!-- 6 DOSEN — BELIEBTESTE WAHL -->
-      <div class="pote-card popular">
+      <div class="pote-card popular smartplayer-scroll-event">
         <div class="pote-header popular">🏆 Bestes Angebot — Empfohlen</div>
         <div class="pote-body">
           <div class="pote-name popular">6 Dosen</div>
